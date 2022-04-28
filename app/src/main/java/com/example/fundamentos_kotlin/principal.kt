@@ -1,4 +1,6 @@
 package com.example.fundamentos_kotlin
+
+val separador="******************"
 // funcion principal
 fun main (){
 
@@ -8,7 +10,7 @@ fun main (){
     val a=2
     println("a=$a")
     // variable
-    var b=2
+    var b=3
     println("b=$b")
 
 
@@ -28,5 +30,5 @@ fun nueTopic(topic: String){
     println()
 // reducir lineas (b.p)
 // para llamar metodo usar $
-    println("\n*************** $topic ****************\n")
+    println("\n$separador $topic $separador\n")
 }
