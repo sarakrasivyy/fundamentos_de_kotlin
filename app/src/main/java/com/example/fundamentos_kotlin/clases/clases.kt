@@ -16,7 +16,11 @@ fun main (){
     println("privado ${smarphone.isPrivate}")
 
     nueTopic("data clase")
-    val myUser= user(id = 0, name = "sara", lastname = "blanco", group = 0)
+    val myUser= user(id = 0, name = "sara", lastname = "blanco", group.FAMILY.ordinal)
+    val bro=myUser.copy(1,"jorge")
+    val friend=bro.copy(id = 2, group = group.FRIEND.ordinal)
     println(myUser.component2())
     println(myUser)
+    println(bro)
+    println(friend)
 }
