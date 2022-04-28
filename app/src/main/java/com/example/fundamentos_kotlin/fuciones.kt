@@ -15,15 +15,17 @@ fun main(){
     print("$a+$b=${sumar(a, b)}\n")
     print("$d-$e=${restar(d,e)}\n")
     sumar1(2,2){ x->
-
-        print("resulatd0 $x")
+     print("resulatd0 $x")
 
         nueTopic("Infix")
         val c=-3
         println(c.enableAbs(false))
         println("$a+$c=${sumar(a,c.enableAbs(false))}")
         println("$a+$c=${sumar(a,c.enableAbs(true))}")
-        nueTopic("sobrecar")
+
+
+
+        nueTopic("sobrecarga")
         sobrecarga("soda", "10%")
         sobrecarga("pan")
         sobrecarga("jugo", validity = "15 marzo")
