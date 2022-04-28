@@ -23,4 +23,16 @@ fun main (){
     println(myUser)
     println(bro)
     println(friend)
+
+    nueTopic("funciones de alcance")
+    with(smarphone){
+        println("privadito $isPrivate")
+        call()
+    }
+    friend.apply {
+        group= com.example.fundamentos_kotlin.clases.group.WORK.ordinal
+        name="ana"
+        lastname="perez"
+    }
+    println(friend)
 }
