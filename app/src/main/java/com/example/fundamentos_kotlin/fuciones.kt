@@ -23,6 +23,10 @@ fun main(){
         println(c.enableAbs(false))
         println("$a+$c=${sumar(a,c.enableAbs(false))}")
         println("$a+$c=${sumar(a,c.enableAbs(true))}")
+        nueTopic("sobrecar")
+        sobrecarga("soda", "10%")
+        sobrecarga("pan")
+        sobrecarga("jugo", validity = "15 marzo")
     }
 }
 
@@ -50,3 +54,7 @@ fun restar(d:Int, e: Double): Any{
 }
 //enable=parametro                        arreglo para permitir el negativo
 infix fun Int.enableAbs(enable:Boolean)= if (enable) abs(this) else this
+
+fun sobrecarga(name:String, promo: String=" sin promo", validity:String="agotar existencia"){
+    println("$name=$promo hasta $validity")
+}
