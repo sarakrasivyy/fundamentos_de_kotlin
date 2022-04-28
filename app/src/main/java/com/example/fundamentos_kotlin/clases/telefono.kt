@@ -1,10 +1,10 @@
 package com.example.fundamentos_kotlin.clases
 
-class telefono (val number:Int){
+open class telefono (protected val number:Int){
     fun call(){
         println("llamando...")
     }
-    fun number(){
+  open  fun numbertre(){
         println("a $number")
     }
 }
