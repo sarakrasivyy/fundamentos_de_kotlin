@@ -1,6 +1,6 @@
 package com.example.fundamentos_kotlin.clases
 
-open class telefono (protected val number:Int){
+open class Telephone (protected val number:Int){
     fun call(){
         println("llamando...")
     }

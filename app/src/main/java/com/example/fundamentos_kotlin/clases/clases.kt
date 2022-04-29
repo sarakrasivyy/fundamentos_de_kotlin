@@ -2,11 +2,13 @@ package com.example.fundamentos_kotlin.clases
 
 import com.example.fundamentos_kotlin.nueTopic
 
+
+
 fun main (){
     nueTopic("clases")
-    val telefono: telefono= telefono(12345)
-    telefono.call()
-    telefono.numbertre()
+    val telephone: Telephone= Telephone(12345)
+    telephone.call()
+    telephone.numbertre()
 
     nueTopic("herencia")
     val smarphone= smarphone(34567, true)
